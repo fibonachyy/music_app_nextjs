@@ -17,21 +17,19 @@ body{
 }
 
 .player_container{
-    max-width: 70%;
+    width: 85%;
+
     min-width: 320px;
-    width: 800px;
+   
     height: max-content;
-    min-height: 450px;
     background-color: rgba(0,0,0,0.2);
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     box-shadow: 0 0 5px #000, 0 0 1px #111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+
+
 
 
 
@@ -47,8 +45,6 @@ body{
         height: 55px;
         background-color: transparent;
         align-items: center;
-        justify-self: flex-end;
-        align-self: flex-end;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -110,5 +106,54 @@ body{
         
     
     }
+    .content_player{
+        width: 100%;
+        height: calc(100% - 50px) ;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        
 
+
+
+
+    // play list container 
+    .playlist_container{
+        width: 30%;
+        min-width: 250px;
+        max-width: 350px;
+        height: 600px;
+        background-color: rgba(0,0,0,0.2);
+        justify-self: center;
+        align-self: flex-end;
+        .search_bar{
+            width: 100%;
+            height: max-content;
+            
+            text-align: center;
+            input{
+                width: calc(100% - 10px);
+                margin: 5px;
+                height: 35px;
+                outline: none;
+                text-align: left;
+                font-size: 15px;
+                color: #1f202b;
+                box-sizing: border-box;
+                padding: 0 8px;
+                border-radius: 3px;
+                box-shadow: none;
+                    border: none;
+                &:focus{
+                    box-shadow: none;
+                    border: none;
+                }
+            }
+        }
+    }
+    }
+
+
+
+   
 }
